@@ -1,0 +1,7 @@
+# Ignore the node_modules directory to prevent local build artifacts
+# from being copied into the Docker image. This ensures that
+# dependencies are installed inside the container for the correct architecture.
+node_modules
+
+# Ignore npm debug logs, which are not needed in the final image.
+npm-debug.log
